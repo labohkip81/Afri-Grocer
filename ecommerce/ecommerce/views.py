@@ -4,18 +4,21 @@ from django.http import HttpResponse
 
 def home_page(request):
     context = {
-        "title":"Hello world"
+        "title":"Hello world",
+        "content":"Welcome to the home page"
     }
     return render(request, "home_page.html",context)
 def about_page(request):
     context = {
-        "title":"About us page"
+        "title":"About us page",
+        "content":"Welcome to the about page"
     }
     return render(request, "home_page.html",context)
 def contact_page(request):
 
     context = {
-        "title":"Contact us page"
+        "title":"Contact us page",
+        "content":"Welcome to the contact page"
     }
     return render(request, "home_page.html",context)
 
